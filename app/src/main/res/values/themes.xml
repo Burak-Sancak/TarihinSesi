@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TarihinSesi" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="colorPrimary">@color/kahve</item>
+        <item name="colorPrimaryVariant">@color/kahve_acik</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#2e7d52</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:statusBarColor">#1a5c38</item>
+    </style>
+
+    <style name="Theme.TarihinSesi.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/kahve</item>
+        <item name="android:statusBarColor">@color/kahve</item>
+        <item name="android:windowBackground">@color/kahve</item>
+    </style>
+</resources>

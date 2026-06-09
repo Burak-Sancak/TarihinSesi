@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tarihin Sesi</string>
+    <string name="notification_channel_id">tarihin_sesi_channel</string>
+    <string name="notification_channel_name">TarihinSesi Bildirimleri</string>
+</resources>

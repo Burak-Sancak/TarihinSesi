@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "522233073420",
+    "project_id": "tarihinsesi23",
+    "storage_bucket": "tarihinsesi23.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522233073420:android:fac608beb2c207ecf88329",
+        "android_client_info": {
+          "package_name": "com.tarihinSesi.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5_n-m6bFXo3EmrjxGCOb0zCi_LUg_evk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

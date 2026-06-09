@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Mekan Adı *" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etAd" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Örn: Sapanca Kalesi"
+            android:background="#FFFFFF" android:padding="12dp" android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Kategori *" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+        <Spinner android:id="@+id/spinnerKategori" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="#FFFFFF"
+            android:padding="8dp" android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Tarih Bilgisi" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etTarih" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Örn: MÖ 2. yüzyıl"
+            android:background="#FFFFFF" android:padding="12dp" android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Açıklama *" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etAciklama" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Mekan hakkında detaylı bilgi"
+            android:background="#FFFFFF" android:padding="12dp" android:minLines="4"
+            android:gravity="top" android:inputType="textMultiLine" android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Enlem *" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etEnlem" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Örn: 40.7731"
+            android:inputType="numberDecimal" android:background="#FFFFFF"
+            android:padding="12dp" android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Boylam *" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etBoylam" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Örn: 30.3951"
+            android:inputType="numberDecimal" android:background="#FFFFFF"
+            android:padding="12dp" android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Bildirim Yarıçapı (metre)" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etYaricap" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Varsayılan: 150 metre"
+            android:inputType="numberDecimal" android:background="#FFFFFF"
+            android:padding="12dp" android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Ses Dosyası URL" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+        <EditText android:id="@+id/etSesUrl" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="https://drive.google.com/uc?export=download&amp;id=..."
+            android:inputType="textUri" android:background="#FFFFFF"
+            android:padding="12dp" android:layout_marginBottom="12dp"/>
+
+        <!-- Resimler -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Resimler (Max 5, Drive URL)" android:textStyle="bold"
+            android:layout_marginBottom="4dp" android:layout_marginTop="4dp"/>
+
+        <EditText android:id="@+id/etResim1" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Resim 1 URL"
+            android:inputType="textUri" android:background="#FFFFFF"
+            android:padding="12dp" android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etResim2" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Resim 2 URL (isteğe bağlı)"
+            android:inputType="textUri" android:background="#FFFFFF"
+            android:padding="12dp" android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etResim3" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Resim 3 URL (isteğe bağlı)"
+            android:inputType="textUri" android:background="#FFFFFF"
+            android:padding="12dp" android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etResim4" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Resim 4 URL (isteğe bağlı)"
+            android:inputType="textUri" android:background="#FFFFFF"
+            android:padding="12dp" android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etResim5" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Resim 5 URL (isteğe bağlı)"
+            android:inputType="textUri" android:background="#FFFFFF"
+            android:padding="12dp" android:layout_marginBottom="24dp"/>
+
+        <Button android:id="@+id/btnKaydet" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="KAYDET"
+            android:backgroundTint="#1a5c38" android:textColor="#FFFFFF"
+            android:padding="14dp"/>
+
+    </LinearLayout>
+</ScrollView>
